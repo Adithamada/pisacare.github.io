@@ -10,7 +10,7 @@
 }
 /* jumbotron */
 .jumbotron {
-    background-image: url(/img/revn.svg); 
+    background-image: url(./img/revn.svg); 
     background-size:cover;
     height:570px;
     text-align: center;
