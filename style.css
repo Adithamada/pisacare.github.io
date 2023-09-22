@@ -112,7 +112,7 @@
 /* card 4 lese */
 .card-body i {
     font-size:50px;
-    backgorund-color:white;
+    background-color:white;
     padding:10px;
     border-radius:50%;
 }
@@ -300,7 +300,7 @@
     /* card 4 lese */
     .card-body i {
         font-size:50px;
-        backgorund-color:white;
+        background-color:white;
         padding:10px;
         border-radius:50%;
     }
