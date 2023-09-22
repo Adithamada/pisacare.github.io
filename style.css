@@ -1,0 +1,399 @@
+
+.navbar-brand img {
+    max-height: 2em; /* Atur ukuran maksimum logo sesuai dengan tinggi font teks */
+    margin-right: 10px;
+}
+/* navbar */
+.nav-link {
+    margin-right:20px;
+
+}
+/* jumbotron */
+.jumbotron {
+    background-image: url(/img/revn.svg); 
+    background-size:cover;
+    height:570px;
+    text-align: center;
+    
+}
+
+.jumbotron .display-4  {
+    color:#7AA8E4 ;
+    margin-top: 150px;
+    font-weight: 600;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 2)
+}
+.jumbotron .lead  span{
+    font-weight: bold;
+    color:#6191CF;
+}
+.jumbotron .lead {
+    color:#4F709C;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7)
+    text-align: center; 
+    font-size:13px;
+    margin-bottom: 40px;
+}
+/* utility */
+.tombol {
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+
+/* sosial media icon */
+.social-icons-bg {
+    background-color: #7AA8E4;
+    padding: 10px;
+    border-radius: 30px; 
+    text-align: center;
+    
+}
+
+.social-icons-bg a {
+    margin: 0 10px; 
+    color: #213555; 
+    font-size: 32px; 
+    text-decoration: none; 
+}
+
+.social-icons-bg a:hover {
+    color: #fff; 
+}
+
+/* card untuk penjelasan Dienstleistung */
+/* card 1 */
+.card-1 {
+    background-color: #E4F1FF;
+    transition: background-color 0.3s; 
+    border-radius:20px;
+    margin-bottom:20px;
+}
+.card-1:hover {
+    background-color: #279EFF; 
+    color:aliceblue;
+}
+
+/* card 1 lese */
+/* card 2 */
+.card-2 {
+    background-color: #FFBFBF;
+    transition: background-color 0.3s; 
+    border-radius:20px;
+    margin-bottom:20px;
+}
+.card-2:hover {
+    background-color: #B31312; 
+    color:aliceblue;
+}
+/* card 2 lese */
+/* card 3 */
+.card-3 {
+    background-color: #CEDEBD;
+    transition: background-color 0.3s; 
+    border-radius:20px;
+    margin-bottom:20px;
+}
+.card-3:hover {
+    background-color: #557A46; 
+    color:aliceblue;
+}
+/* card 3 lese */
+/* card 4 */
+.card-4 {
+    background-color: #FFFD8C;
+    transition: background-color 0.3s; 
+    border-radius:20px;
+    margin-bottom:20px;
+}
+.card-4:hover {
+    background-color: #FFC436; 
+    color:aliceblue;
+}
+/* card 4 lese */
+.card-body i {
+    font-size:50px;
+    backgorund-color:white;
+    padding:10px;
+    border-radius:50%;
+}
+/* li style */
+.card-text ul {
+    list-style: none; /* Menghilangkan tanda bullet pada daftar */
+    padding: 0; /* Menghapus padding pada daftar */
+    margin: 0; /* Menghapus margin pada daftar */
+}
+
+.card-text li {
+    margin-bottom: 5px; /* Menambahkan margin bawah pada item daftar */
+}
+            .aboutus .description {
+                text-align: justify; /* Teks kembali ke posisi kiri pada mode responsif */
+                margin-right: 0; /* Hapus margin-right pada mode responsif */
+            }
+.aboutus img {
+    border-radius:20px;
+}
+.footer {
+    background-color: #7AA8E4;
+    color: #fff;
+    border-radius: 25px 25px 0 0;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #213555;
+    margin-right: 15px;
+    font-size:25px;
+}
+.card {
+    width: 100%; /* Mengisi lebar penuh pada tampilan mobile */
+    background-color: #f8f9fa;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: transform 0.3s;
+    margin-bottom: 20px; /* Margin bawah untuk menghindari tumpang tindih kartu */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; /* Menggunakan aspek rasio gambar asli */
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-img-top {
+    opacity: 0;
+}
+
+.card-info {
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: translateY(100%);
+    transition: transform 0.3s;
+    height: 0; /* Mengatur tinggi awal ke 0 */
+    overflow: hidden; /* Menghindari konten terlihat awalnya */
+}
+
+.card:hover .card-info {
+    transform: translateY(0);
+    height: auto; /* Munculkan konten dengan tinggi otomatis */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  responsive desktop */
+@media (min-width: 992px) {
+    
+    .navbar-brand, .nav-link {
+        color: black !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1)
+    }
+    .nav-link {
+        margin-right:20px;
+        text-transform: uppercase;
+    }
+    .nav-link:hover::after {
+        contentn:  '';
+        display: block;
+        border-bottom: 3px solid #FFC436;
+        width: 50%;
+        margin: auto;
+        padding-bottom:5px;
+        margin-bottom: -8px;
+    }
+    .jumbotron {
+        margin-top:-75px;
+        height:640px;
+    }
+    .jumbotron .lead {
+        font-size:42px;
+    }
+    .jumbotron {
+        background-image: url(/img/revn.svg); 
+        background-size:cover;
+        height:640px;
+        text-align: center;
+    }
+    
+   .aboutus {
+    margin-left:30px;
+   }
+   .aboutus img {
+    border-radius:50px;
+   }
+   .aboutus .description {
+    text-align: justify;
+    margin-right: 20px; /* Atur sesuai kebutuhan Anda */
+    }
+
+/* card untuk penjelasan Dienstleistung */
+/* card 1 */
+    .card-1 {
+        background-color: #E4F1FF;
+        transition: background-color 0.3s; 
+        border-radius:20px;
+        margin-bottom:20px;
+    }
+    .card-1:hover {
+        background-color: #279EFF; 
+        color:aliceblue;
+    }
+
+    /* card 1 lese */
+    /* card 2 */
+    .card-2 {
+        background-color: #FFBFBF;
+        transition: background-color 0.3s; 
+        border-radius:20px;
+        margin-bottom:20px;
+    }
+    .card-2:hover {
+        background-color: #B31312; 
+        color:aliceblue;
+    }
+    /* card 2 lese */
+    /* card 3 */
+    .card-3 {
+        background-color: #CEDEBD;
+        transition: background-color 0.3s; 
+        border-radius:20px;
+        margin-bottom:20px;
+    }
+    .card-3:hover {
+        background-color: #557A46; 
+        color:aliceblue;
+    }
+    /* card 3 lese */
+    /* card 4 */
+    .card-4 {
+        background-color: #FFFD8C;
+        transition: background-color 0.3s; 
+        border-radius:20px;
+        margin-bottom:20px;
+    }
+    .card-4:hover {
+        background-color: #FFC436; 
+        color:aliceblue;
+    }
+    /* card 4 lese */
+    .card-body i {
+        font-size:50px;
+        backgorund-color:white;
+        padding:10px;
+        border-radius:50%;
+    }
+    /* li style */
+    .card-text ul {
+        list-style: none; /* Menghilangkan tanda bullet pada daftar */
+        padding: 0; /* Menghapus padding pada daftar */
+        margin: 0; /* Menghapus margin pada daftar */
+    }
+
+    .card-text li {
+        margin-bottom: 5px; /* Menambahkan margin bawah pada item daftar */
+    }
+    .aboutus .description {
+        text-align: justify; /* Teks kembali ke posisi kiri pada mode responsif */
+        margin-right: 0; /* Hapus margin-right pada mode responsif */
+    }
+    
+    .card {
+        width: 250px;
+        background-color: blue;
+        overflow: hidden;
+        height:300px;
+        border-radius:30px;
+        transition: transform 0.3s;
+        margin-right: 10px; /* Margin antara kartu */
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+    }
+
+    .card-img-top {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.3s;
+    }
+
+    .card:hover .card-img-top {
+        opacity: 0;
+    }
+
+    .card-info {
+        text-align: center;
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.8);
+        transform: translateY(100%);
+        transition: transform 0.3s;
+    }
+
+    .card:hover .card-info {
+        transform: translateY(0);
+        height:200px;
+    }
+    .footer {
+        background-color: #7AA8E4;
+        color: #fff;
+        padding: 20px 0;
+    }
+    
+    .footer a {
+        color: #213555;
+        margin-right: 15px;
+        font-size: 25px;
+        display: inline-block;
+        transition: transform 0.2s ease; /* Efek animasi skala */
+    }
+    
+    .footer a:hover {
+        transform: scale(1.5); /* Skala ikon saat dihover */
+        color:aliceblue;
+    }
+    
+    /* Animasi sederhana untuk gambar */
+.animate-image {
+    transform: scale(0.8);
+    transition: transform 0.5s ease;
+}
+
+.animate-image:hover {
+    transform: scale(1);
+}
+
+
+    
+
+
+
+}
+
+/*  responsive desktop selesai */
